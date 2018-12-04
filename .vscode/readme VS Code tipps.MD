@@ -20,3 +20,8 @@
 1. strg+shift+p -> git stage all
 2. "" -> git commit all
 3. -> git push
+
+
+## using pip command libs
+open an Terminal (Python)
+PS C:\DEV\git\Python_test> & python -m pip install -U autopep8
