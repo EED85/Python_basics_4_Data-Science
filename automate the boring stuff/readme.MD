@@ -1,2 +1,2 @@
 # VS Studio Shortcuts
-Strg + 
+Strg + # - mulitline Comment 
