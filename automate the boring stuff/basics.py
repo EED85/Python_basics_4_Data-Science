@@ -1,3 +1,12 @@
+#Variable Names are Case Sensitive!
+S = "a"
+print(s)
+
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# NameError: name 's' is not defined
+
+
 
 # strings in Python
 a = 'hello'

@@ -1,0 +1,2 @@
+# VS Studio Shortcuts
+Strg + 
