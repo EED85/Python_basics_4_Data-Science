@@ -15,6 +15,11 @@ a,b = 'A','B'
 b = a ; a = b
 a,b = b,a
 
+    #line break within code
+
+long_str = 'Hello, ' + \
+            'my name is '
+
     # Increment Variables / augmented assignment operators
     # https://docs.python.org/2.0/ref/augassign.html
 I = 0
@@ -96,6 +101,8 @@ l = ['a','b','c']
 l1 = list(range(5))
         #List within a List
 ll = [['a','b','c'],[1,2,3]]
+l2 = [  'hello',
+        'you']
     #index
 l[0:2] # keeps first & second (a , b)
 l[0:] # equals l

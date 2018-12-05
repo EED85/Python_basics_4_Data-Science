@@ -5,11 +5,11 @@ http://www.pythontutor.com/visualize.html#mode=edit
 
 # installed modules
 
+- pip install paperclip
 
- - pip install paperclip
+# Used modules
 
- # Used modules
-
- - sys
- - paperclip
- - random 
+- sys
+- paperclip
+- random
+- copy

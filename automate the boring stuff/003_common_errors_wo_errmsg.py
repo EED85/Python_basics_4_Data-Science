@@ -12,7 +12,22 @@ l1 = list(range(5))
 l2 = l1
 l2[0] = -1 #l1 & l2 will be changed!!
 l1
+    #use copy instead
+import copy
+l3 = copy.deepcopy(l1)
 
+#Note - Lists are working different for mutable variables regrading local and global scopes (see refrence)!!!
+
+def edit_list(l):
+    l.append('a')
+
+l2 = ['0']
+edit_list(l2)
+l2
+
+    #use copy instead
+import copy
+l3 = copy.deepcopy(l2)
 
 #sorting Lists in true alphabetic order
 
