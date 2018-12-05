@@ -22,7 +22,8 @@ I = I +1
 I += 1
 I
 
-
+    # object oriented
+    # every class to
 
 
 
@@ -113,6 +114,11 @@ cat = ['fat','orange','loud']
 size, color,dis = cat
     # methods
 l.index('A')
+l.append('E')
+l.insert(0,'0')
+l
+l.remove('0')
+l
 
 
 
