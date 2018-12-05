@@ -15,11 +15,23 @@
 
 ## Git workflow
 
-### basic workflow
+### basic workflow - One Person / One PC
 
-1. strg+shift+p -> git stage all
-2. "" -> git commit all
-3. -> git push
+
+1. "" -> git commit all
+2. -> git push
+
+### Using several PCs
+
+run git pull first, before appliying the basic worklfow
+
+### several users
+
+1.  git checkout to new branch (name it develop_YourName) 
+2. apply basic workflow to branch
+3. Merge it back to master and delete branch
+
+
 
 
 ## using pip command libs

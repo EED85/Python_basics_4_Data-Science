@@ -2,5 +2,6 @@
 S = "a"
 print(s)
 
-']
-dic[0]
+# lists containing numbers and strings can not be sorted
+l = ['A',1]
+l.sort()
