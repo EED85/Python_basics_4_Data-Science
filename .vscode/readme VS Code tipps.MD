@@ -3,11 +3,23 @@
 ## cool plugins
 
 - git lens
-- Anaconda Extension
+- Anaconda Extension Pack
 - Markdown Preview
+- Maekdownlinit
+- GIthub Pull requests
+- Python
+- gitinore
+- github notifications?
 
+## using terminals
+
+- use one powershell and one for python
+  - with powershell you can use git commands
+  - with python you can print out / manipulate python stuff
 
 ## Shortcuts
+
+- [Shortcuts](https://www.microsoft.com/germany/techwiese/know-how/visual-studio-code-keyboard-shortcuts)
 - Strg + # - mulitline Comment
 - strg + c - quit infinite loop
 - strg + shift +  P
@@ -16,7 +28,6 @@
 ## Git workflow
 
 ### basic workflow - One Person / One PC
-
 
 1. "" -> git commit all
 2. -> git push

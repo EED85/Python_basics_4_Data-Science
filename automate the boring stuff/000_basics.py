@@ -23,15 +23,15 @@ I += 1
 I
 
     # object oriented
-    # every class to
+    # every class has methods, less functions than in other o
+    # languages
 
-
-
-# Traceback (most recent call last):
-#   File "<stdin>", line 1, in <module>
-# NameError: name 's' is not defined
-
-
+# mutable and immutable
+# lista are mutable, strings are not
+l = list('hello')
+str = 'hel1lo'
+l[1] = "H"
+str[1] = "H" # throws error
 
 # strings in Python
 a = 'hello'
@@ -46,8 +46,10 @@ a[1] #returns second letter of hello
 a[1:3]
 # match
 a.find('e')
+'ll' in a
 # replace
 a.replace('ll','LL')
+
 
 
 # split,join,reverse, is*
