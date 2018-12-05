@@ -25,6 +25,17 @@ print(Glob)
 _set_global()
 print(Glob)
 
+#Note - Lists are working different (see refrence)!!!
+
+def edit_list(l):
+    l.append('a')
+
+l2 = ['0']
+edit_list(l2)
+l2
+
+
+
 
 #define a global variable within dunction
 

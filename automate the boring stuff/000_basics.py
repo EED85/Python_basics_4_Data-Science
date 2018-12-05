@@ -121,6 +121,11 @@ l + l
 l*2
 l.append('D')
 l
+
+    #comparing lists
+
+list(range(2)) == [1,0]
+    #no short cut for an Element by ELement comparison
     #match
 'A' in l # case sensitive!
 'a' in l 
@@ -140,8 +145,15 @@ l.sort(key=str.lower,true)
 
 
 
- 
+ # dictonary
 
+    #defining
+myCat = {'size':'fat', 'color':'grey'}
+
+
+#comparing
+myCat2 = { 'color':'grey', 'size':'fat'}
+myCat == myCat2
 
 # plotting
 import matplotlib.pyplot as plt
