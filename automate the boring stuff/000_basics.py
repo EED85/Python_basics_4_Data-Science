@@ -151,7 +151,7 @@ l.sort(key=str.lower,true)
 myCat = {'size':'fat', 'color':'grey'}
 
 
-#comparing
+    #comparing
 myCat2 = { 'color':'grey', 'size':'fat'}
 myCat == myCat2
 
