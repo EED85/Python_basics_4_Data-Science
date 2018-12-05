@@ -14,7 +14,7 @@ def _local_call_global():
     print(Glob)
 _local_call_global()
 
-#set existing gobal variable
+#set exispting gobal variable
 
 Glob = "global"
 def _set_global():
