@@ -1,5 +1,31 @@
 
 
+# General characteristis of python
+
+    # code intend is forced on loops / if statements ...
+
+
+    #multiple assigment trick
+
+a = 'A'
+b = 'B'
+a = 'A';b = 'B'
+a,b = 'A','B'
+
+b = a ; a = b
+a,b = b,a
+
+    # Increment Variables / augmented assignment operators
+    # https://docs.python.org/2.0/ref/augassign.html
+I = 0
+I = I +1
+I += 1
+I
+
+
+
+
+
 # Traceback (most recent call last):
 #   File "<stdin>", line 1, in <module>
 # NameError: name 's' is not defined
@@ -80,6 +106,14 @@ l
     #match
 'A' in l # case sensitive!
 'a' in l 
+l.index('A')
+l.index('ff') # throws ValueError, if not within List
+
+cat = ['fat','orange','loud']
+size, color,dis = cat
+    # methods
+l.index('A')
+
 
 
  
