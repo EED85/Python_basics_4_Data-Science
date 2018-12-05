@@ -6,3 +6,11 @@ print(_local())
 
 #dic withount comma seperated
 dic = ['a' 'b'] #-> only one item!
+
+#sorting Lists in true alphabetic order
+
+l = ['a','b','A','B']
+l.sort() #sorts first the capital letters - B before a ..
+l
+l.sort(key=str.lower)
+l
