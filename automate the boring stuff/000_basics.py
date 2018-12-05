@@ -26,12 +26,19 @@ I
     # every class has methods, less functions than in other o
     # languages
 
-# mutable and immutable
-# lista are mutable, strings are not
+    # mutable and immutable
+    # lista are mutable, strings are not
 l = list('hello')
 str = 'hel1lo'
 l[1] = "H"
 str[1] = "H" # throws error
+
+    #Note - mutable variables use references ...
+l1 = list(range(5))
+l2 = l1
+l2[0] = -1 #l1 & l2 will be changed!!
+l1
+
 
 # strings in Python
 a = 'hello'
@@ -86,6 +93,7 @@ str(2.3)
 #List
     #define
 l = ['a','b','c']
+l1 = list(range(5))
         #List within a List
 ll = [['a','b','c'],[1,2,3]]
     #index
