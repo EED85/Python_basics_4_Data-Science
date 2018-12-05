@@ -58,7 +58,7 @@ str(2.3)
     #define
 l = ['a','b','c']
         #List within a List
-ll = [['a','b','c'],[1,,3]]
+ll = [['a','b','c'],[1,2,3]]
     #index
 l[0:2] # keeps first & second (a , b)
 l[0:] # equals l
@@ -72,7 +72,6 @@ l
     #delete
 del l[1]
 l
-
     #append
 l + l
 l*2

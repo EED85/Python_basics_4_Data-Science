@@ -16,3 +16,11 @@ for I in range(0,11,2): # 0 2 4 ... 10
 
 for I in range(10,-1,-2): # 10 8 ... 0
     print(I)
+
+# Lists
+
+l = list(range(0,11,2))
+l
+
+for i in range(len(l)):
+    print l[i]
