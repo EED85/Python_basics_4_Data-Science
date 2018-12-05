@@ -10,23 +10,35 @@ except:
 print(N)
 
 
-#?go to statemnt?
 
-#? print Err.number / Statement)
 
-#only except for a specific errtype
 
+#only except for a specific errtype and print error Details
+import sys
 def _devide_err(arg1,arg2):
     try:
         I_arg2 = int(arg2)
         return arg1/arg2
     except ValueError:
+        type, value, traceback = sys.exc_info()
         print("Err: arg2 is a string")
+        print("DETAILS")
+        print(value)
+        print(traceback)
+        print(type)
     print('a')
     
 
 
 N=_devide_err(42,'h')
 
+    # list of error types:
+    # https://docs.python.org/2/library/exceptions.html
 
 
+#go to statemnt
+
+    #Does not exist
+    #see https://www.quora.com/What-is-the-equivalent-of-goto-or-jump-command-in-python
+
+#?print function name where error incurred
