@@ -66,10 +66,10 @@ plt.show()
 #easy plotting probability
 
 #histogramm
-np.random.seed(19680801)
 
+np.random.seed(19680801)
 mu, sigma = 100, 15
-x = mu + sigma * np.random.randn(10000)
+x = mu + sigma * np.random.normal(10000)
     # the histogram of the data
 n, bins, patches = plt.hist(x, 50, normed=1, facecolor='g', alpha=0.75)
 plt.show()

@@ -3,6 +3,7 @@
 import numpy as np
 import random as rd
 from scipy.optimize import least_squares
+import matplotlib.pyplot as plt
 
 y_  = np.array([-1,0.1,1]) #observed data
 x   = np.linspace(-1,1,3) #x values
@@ -45,21 +46,29 @@ s = least_squares(fun2,b0, args=(x, y_))
 
 #fitting polynom
 
-x = np.linspace(-4,4,16)
+# x = np.linspace(-4,4,16)
+x = np.arange(-4,4,0.5)
 x_ = np.concatenate((x, x), axis=None)
-y_ = [x**2 + rd.random()/20-0.1 for x in x]
-y2_ = [x**2 + rd.random()/20-0.1 for x in x]
+y_ = [x**2 + rd.random()/2-0.5 for x in x]
+y2_ = [x**2 + rd.random()/2-0.5 for x in x]
 y_ = np.concatenate((y_, y2_), axis=None)
 
-def poly2(b,x,y_):
-    return  b[0]*x + b[1]*x**2 -y_
-b0 = np.ones(2)
-poly2(b0,1,1)
-s = least_squares(poly2,b0, args=(x_, y_))
-s.x
+def poly2(b,x):
+    return  b[0] + b[1]*x + b[2]*x**2
+def poly2_r(b,x,y_):
+    return  poly2(b,x) -y_
+b0 = np.ones(3)
+poly2_r(b0,1,1)
+s = least_squares(poly2_r,b0, args=(x_, y_))
+
+plt.plot(x_,y_,'b.')
+plt.plot(x_,poly2(s.x,x_),'r-')
+plt.grid(True)
+plt.title(str(round(s.x[2],1)) + '*' + r'$x^2$') # not ready formatted
+plt.show()
 
 #glm mith poisson
-import matplotlib.pyplot as plt
+
 
 from scipy.stats import poisson
 
