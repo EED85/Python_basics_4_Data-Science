@@ -1,6 +1,7 @@
 # solving y = 2*b*x with least sqaures
 #https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.least_squares.html
 import numpy as np
+import random as rd
 from scipy.optimize import least_squares
 
 y_  = np.array([-1,0.1,1]) #observed data
@@ -40,3 +41,19 @@ y_[5]=0.25;y_[0]=-1.9
 y_
 
 s = least_squares(fun2,b0, args=(x, y_))
+
+
+#glm mith poisson
+
+
+x = np.linspace(0.5,8,16)
+x = np.concatenate((x, x), axis=None)
+
+
+y_ = [1/x + 1/x*(rd.random()/20-0.1) for x in x]
+y2_ = [1/x + 1/x*(rd.random()/20-0.1) for x in x]
+y_ = np.concatenate((y_, y2_), axis=None)
+mu = np.mean(y_)
+mu_ln = np.log(E_Y)
+
+
