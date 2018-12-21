@@ -50,12 +50,10 @@ x_ = np.concatenate((x, x), axis=None)
 y_ = [x**2 + rd.random()/20-0.1 for x in x]
 y2_ = [x**2 + rd.random()/20-0.1 for x in x]
 y_ = np.concatenate((y_, y2_), axis=None)
-len(y_)
-len(x_)
+
 def poly2(b,x,y_):
     return  b[0]*x + b[1]*x**2 -y_
 b0 = np.ones(2)
-b0
 poly2(b0,1,1)
 s = least_squares(poly2,b0, args=(x_, y_))
 s.x
