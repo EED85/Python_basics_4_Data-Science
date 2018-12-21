@@ -141,7 +141,7 @@ l.insert(0,'0')
 l
 l.remove('0')
 l
-l.sort(key=str.lower,true)
+l.sort(true,key=str.lower)
 
 
 
