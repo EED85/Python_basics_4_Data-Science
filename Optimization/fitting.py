@@ -59,7 +59,9 @@ s = least_squares(poly2,b0, args=(x_, y_))
 s.x
 
 #glm mith poisson
+import matplotlib.pyplot as plt
 
+from scipy.stats import poisson
 
 x = np.linspace(0.5,8,16)
 x = np.concatenate((x, x), axis=None)
@@ -69,6 +71,9 @@ y_ = [1/x + 1/x*(rd.random()/20-0.1) for x in x]
 y2_ = [1/x + 1/x*(rd.random()/20-0.1) for x in x]
 y_ = np.concatenate((y_, y2_), axis=None)
 mu = np.mean(y_)
+link = poisson(mu)
 mu_ln = np.log(E_Y)
+link.cdf(0.5)
+fig, ax = plt.subplots(1, 1)
 
 

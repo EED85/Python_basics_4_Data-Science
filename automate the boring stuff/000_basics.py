@@ -162,4 +162,7 @@ x = np.linspace(0,20,100)
 plt.plot(x,np.sin(x))
 plt.show
 
+plt.plot([1,2,3,4,5]) 
+plt.show() 
+
 #? Mising value / NaN ..
