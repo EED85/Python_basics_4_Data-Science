@@ -31,3 +31,12 @@ s = least_squares(fun2,b0, args=(x, y_))
 
 
 print('solution 0f y=2*b ' + str(s.x[0]))
+
+#some more data - some more noise
+
+x = np.repeat(x,2)
+y_ = np.repeat(y_,2)
+y_[5]=0.25;y_[0]=-1.9
+y_
+
+s = least_squares(fun2,b0, args=(x, y_))
