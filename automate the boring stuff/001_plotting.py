@@ -26,7 +26,10 @@ plt.plot(x,x**2)
 plt.title(r'$x^2$')
 plt.show()
 
-
+    #grid
+plt.plot(x,x**2)
+plt.grid(True)
+plt.show()
     #format
 # http://www.engineer101.com/matlab-plot-formatting/
 
@@ -37,7 +40,9 @@ plt.show()
 
 #plotting several funcs in one figure
 
-plt.plot(t,np.sin(t),'r',t,np.cos(t),'y')
+plt.plot(t,np.sin(t),'r',label='sin')
+plt.plot(t,np.cos(t),'y',label = 'cos')
+plt.legend(loc='upper left')
 plt.title('COS vs SIN')
 plt.show()
 
@@ -54,13 +59,28 @@ plt.show()
 def lfunc(x):
     return 2*x+2
 
-y = [lfunc(x) for x in range(-5,5)]
-
 
 
 plt.plot(x,lfunc(x))
 plt.show()
+#easy plotting probability
+
+#histogramm
+np.random.seed(19680801)
+
+mu, sigma = 100, 15
+x = mu + sigma * np.random.randn(10000)
+    # the histogram of the data
+n, bins, patches = plt.hist(x, 50, normed=1, facecolor='g', alpha=0.75)
+plt.show()
+
 
 from scipy.stats import poisson
-
+mu = 1
+plt.plot(t,1-poisson.cdf(mu,t),label = 'Distribution')
+plt.plot(t,poisson.pmf(mu,t),label = 'density')
+plt.legend(loc='upper right')
+plt.title('Poisson Verteilung mit ' + r'$\mu$=' + str(mu))
+plt.grid(True)
+plt.show()
 
