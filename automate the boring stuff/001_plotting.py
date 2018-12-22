@@ -74,7 +74,7 @@ x = mu + sigma * np.random.normal(10000)
 n, bins, patches = plt.hist(x, 50, normed=1, facecolor='g', alpha=0.75)
 plt.show()
 
-
+#pmf: = Density / cdf:=distribution / ppf:=inverse distribution 
 from scipy.stats import poisson
 mu = 1
 plt.plot(t,1-poisson.cdf(mu,t),label = 'Distribution')
@@ -83,4 +83,12 @@ plt.legend(loc='upper right')
 plt.title('Poisson Verteilung mit ' + r'$\mu$=' + str(mu))
 plt.grid(True)
 plt.show()
+
+
+P = np.arange(0,1,0.01)
+plt.plot(P,poisson.ppf(P,mu))
+plt.title('inverse Poisson Verteilung mit ' + r'$\mu$=' + str(mu))
+plt.show()
+
+
 

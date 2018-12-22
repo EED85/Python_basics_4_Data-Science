@@ -60,11 +60,11 @@ def poly2_r(b,x,y_):
 b0 = np.ones(3)
 poly2_r(b0,1,1)
 s = least_squares(poly2_r,b0, args=(x_, y_))
-
-plt.plot(x_,y_,'b.')
-plt.plot(x_,poly2(s.x,x_),'r-')
+plt.plot(x_,y_,'b.',label='Data')
+plt.plot(x_,poly2(s.x,x_),'r-',label='fitted')
+plt.legend(loc='upper left')
 plt.grid(True)
-plt.title(str(round(s.x[2],1)) + '*' + r'$x^2$') # not ready formatted
+plt.title(str(round(s.x[2],1)) + '*' + r'$x^2$') # not ready
 plt.show()
 
 #glm mith poisson
@@ -81,8 +81,10 @@ y2_ = [1/x + 1/x*(rd.random()/20-0.1) for x in x]
 y_ = np.concatenate((y_, y2_), axis=None)
 mu = np.mean(y_)
 link = poisson(mu)
+
 mu_ln = np.log(E_Y)
-link.cdf(0.5)
+link.cdf(100)
+link.ppf(link.cdf(100))
 fig, ax = plt.subplots(1, 1)
 
 
