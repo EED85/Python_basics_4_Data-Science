@@ -36,7 +36,9 @@ N=_devide_err(42,'h')
     # https://docs.python.org/2/library/exceptions.html
 
 l = ["A" , "B"] 
-l.index("a") # raises value Error
+l.index("a") # raises ValueError
+string = 'Hello'
+string.append(' World') # raises AttributeError
 
 #go to statemnt
 
