@@ -86,7 +86,8 @@ a.replace('ll','LL')
 5-3
 3*7
 3/4
-3**2
+3**2 #power exponent
+4%3 #-> 1 (division remainder / Rest)
 
 
 
