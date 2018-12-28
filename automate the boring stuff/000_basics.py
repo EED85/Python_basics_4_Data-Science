@@ -22,10 +22,14 @@ long_str = 'Hello, ' + \
 
     # Increment Variables / augmented assignment operators
     # https://docs.python.org/2.0/ref/augassign.html
-I = 0
-I = I +1
-I += 1
-I
+I = 10
+I += 1 #I = I + 1 -> I = 11
+I -= 1 #I = I - 1 -> I = 10
+I *= 2 #I = I *2 -> I = 20
+I /= 2 #I = I/2 -> I = 10
+I %= 3 #I = I % 3 -> I = 1
+
+
 
     # object oriented
     # every class has methods, less functions than in other o
