@@ -35,6 +35,8 @@ N=_devide_err(42,'h')
     # list of error types:
     # https://docs.python.org/2/library/exceptions.html
 
+l = ["A" , "B"] 
+l.index("a") # raises value Error
 
 #go to statemnt
 
