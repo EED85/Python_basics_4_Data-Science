@@ -132,8 +132,7 @@ list(range(2)) == [1,0]
 l.index('A')
 l.index('ff') # throws ValueError, if not within List
 
-cat = ['fat','orange','loud']
-size, color,dis = cat
+
     # methods
 l.index('A')
 l.append('E')
@@ -144,7 +143,9 @@ l
 l.sort(true,key=str.lower)
 
 
-
+    #multiple assigment trick list
+cat = ['fat','orange','loud']
+size, color,dis = cat
  # dictonary
 
     #defining
