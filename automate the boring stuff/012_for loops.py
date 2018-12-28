@@ -27,3 +27,7 @@ for i in range(len(l)):
 
 
 
+l = ['a' , 'b']
+len(l)
+for i in range(len(l)):
+    print(str(i) + ' : ' + l[i])
