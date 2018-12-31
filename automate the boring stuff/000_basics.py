@@ -38,9 +38,9 @@ I %= 3 #I = I % 3 -> I = 1
     # mutable and immutable
     # lista are mutable, strings are not
 l = list('hello')
-str = 'hel1lo'
+str1 = 'hel1lo'
 l[1] = "H"
-str[1] = "H" # throws error
+str1[1] = "H" # throws error
 
     #Note - mutable variables use references ...
 l1 = list(range(5))
@@ -97,7 +97,7 @@ int(2.3)
 int('2')
 round(2.234,1) #one decimal
 
-str(2.3)
+print(str(2.3))
 
 
 #List
@@ -138,15 +138,19 @@ l.index('A')
 l.index('ff') # throws ValueError, if not within List
 
 
-    # methods
+    # other methods
 l.index('A')
 l.append('E')
 l.insert(0,'0')
 l
 l.remove('0')
-l
-l.sort(true,key=str.lower)
+l = ['A','b','B','C','D']
+l.sort() #uses ASCII Sort (meaning Capital Letters before small letters)
+l.sort(key=str.lower);l
+l.sort(key=str.lower,reverse=True);l
 
+cat = ['fat','orange','loud']
+cat.sort(key=len);cat
 
     #multiple assigment trick list
 cat = ['fat','orange','loud']
