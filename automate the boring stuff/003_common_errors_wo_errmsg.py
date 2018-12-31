@@ -36,3 +36,10 @@ l.sort() #sorts first the capital letters - B before a ..
 l
 l.sort(key=str.lower)
 l
+
+#NEVER call a variable str (or like another existing function)
+l.sort(key=str.lower)
+str = 'a'
+l.sort(key=str.lower) #throws an error
+del str
+l.sort(key=str.lower)
