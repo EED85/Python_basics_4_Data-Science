@@ -21,8 +21,8 @@ print(x[1])
 
 #interactive plot, only works with jupyter Notbeook mode in vsc
 
-# import matplotlib.pyplot as plt
-# import numpy as np
+import matplotlib.pyplot as plt
+import numpy as np
 import mpld3
 
 
