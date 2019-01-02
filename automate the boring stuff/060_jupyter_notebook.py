@@ -1,5 +1,5 @@
-init_notebook_mode(Connected = True)
-%matplotlib inline
+# init_notebook_mode(Connected = True)
+# %matplotlib inline
 #run cells - not working yet
 #%%
 import matplotlib.pyplot as plt

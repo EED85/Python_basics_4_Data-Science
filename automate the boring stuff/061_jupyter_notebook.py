@@ -31,8 +31,8 @@ mpld3.enable_notebook()
 fig, ax = plt.subplots(subplot_kw=dict(axisbg='#EEEEEE'))
 ax.grid(color='white', linestyle='solid')
 N = 50
-scatter = ax.scatter(np.random.normal(size=N),
-                     np.random.normal(size=N),
+scatter = ax.scatter(np.random.randn(size=N),
+                     np.random.randn(size=N),
                      c=np.random.random(size=N),
                      s = 1000 * np.random.random(size=N),
                      alpha=0.3,
