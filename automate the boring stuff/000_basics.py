@@ -15,10 +15,14 @@ a,b = 'A','B'
 b = a ; a = b
 a,b = b,a
 
-    #line break within code
+    #line break within code only
 
 long_str = 'Hello, ' + \
             'my name is '
+
+    #defining long strings with line break within string and code
+long_str2 = '''uhsdfuhsdf
+dfödslfjlf'''
 
     # Increment Variables / augmented assignment operators
     # https://docs.python.org/2.0/ref/augassign.html
@@ -160,10 +164,43 @@ size, color,dis = cat
     #defining
 myCat = {'size':'fat', 'color':'grey'}
 
+myCat.setdefault('age',8) #adds new key age with the value 8
+myCat.setdefault('size','thin') #nothin happens as key size already exists
 
+#basic information
+    
     #comparing
 myCat2 = { 'color':'grey', 'size':'fat'}
 myCat == myCat2
+
+    #indexing
+
+myCat.get('size',0) # returns 0, if size does not exist
+myCat['size']
+
+myCat.get('NaN',0)
+
+    #loop
+for key in myCat.keys():
+    print(key)
+for value in myCat.values():
+    print(value)
+for item in myCat.items():
+    print(item)
+    print('Key of item is : ' +  item[0])
+    print('value of item is : ' +  item[1])
+
+    #check for keys
+"color" in myCat2
+
+    #count charracters with dictionaries
+message = 'Hello WorLd'
+count = {}
+for c in message.lower():
+    c
+    count.setdefault(c,0)
+    count[c] = count[c] +1
+    
 
 # plotting
 import matplotlib.pyplot as plt
