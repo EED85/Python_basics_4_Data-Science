@@ -61,6 +61,16 @@ print(div(1,0))
 #assert statement - validate assumptions, that should always hold
 
 sum_of_pos_no = 1 +2 +3 +4 -100
-assert  sum_of_pos_no > 0 # var should have always a positive Value within a long program
+assert  sum_of_pos_no > 0 # should have always a positive Value within a long program
 print('a')
+
+
+#logging
+
+    #Option 1) Use print statement and see console
+    #Option 2) write a log - use open and append method for files
+    #option 3) use logging module in order to have nicer prints in the concole
+    #Option 4) use logging module in order to write a log file
+
+
 
