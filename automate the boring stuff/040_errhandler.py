@@ -46,3 +46,21 @@ string.append(' World') # raises AttributeError
     #see https://www.quora.com/What-is-the-equivalent-of-goto-or-jump-command-in-python
 
 #?print function name where error incurred
+
+
+#raise statement - give back meaningful error messages for wrong user inputs
+
+def div(arg1,arg2):
+    if arg2 == 0:
+        raise Exception("Durch null teilen nicht erlaubt")
+    return arg1/arg2
+
+print(div(1,0))
+
+
+#assert statement - validate assumptions, that should always hold
+
+sum_of_pos_no = 1 +2 +3 +4 -100
+assert  sum_of_pos_no > 0 # var should have always a positive Value within a long program
+print('a')
+
