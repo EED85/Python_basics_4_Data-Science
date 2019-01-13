@@ -37,7 +37,7 @@ l2
 
 
 
-#define a global variable within dunction
+#define a global variable within function
 
 def def_globvar():
     global Glob2

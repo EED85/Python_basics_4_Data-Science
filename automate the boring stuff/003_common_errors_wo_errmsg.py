@@ -4,8 +4,8 @@ def _local():
     S = 2
 print(_local())
 
-#dic withount comma seperated
-dic = ['a' 'b'] #-> only one item!
+#l withount comma seperated
+l = ['a' 'b'] #-> only one item!
 
 # change in a list, will change all refrenced lists ....
 l1 = list(range(5))

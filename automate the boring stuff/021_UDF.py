@@ -2,8 +2,8 @@
 
 #positinal
 
-def _print_(msg):
-    print(msg)
+def _print_(s_msg):
+    print(s_msg)
 
 _print_('h')
 
@@ -16,11 +16,11 @@ print(plusOne(1))
 
 #keyword Parameter / default value / optional Parameter
 
-def _key(msg = "Test"):
-    print(msg)
+def _key(s_msg = "Test"):
+    print(s_msg)
 
 _key() #prints default value
-_key(msg = "a") #prints default value
+_key(s_msg = "a") #prints default value
 _key('r')
 
 # ?Keyword and positional parameters

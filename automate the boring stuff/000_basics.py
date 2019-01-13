@@ -17,11 +17,11 @@ a,b = b,a
 
     #line break within code only
 
-long_str = 'Hello, ' + \
+s_long = 'Hello, ' + \
             'my name is '
 
     #defining long strings with line break within string and code
-long_str2 = '''uhsdfuhsdf
+s_long2 = '''uhsdfuhsdf
 dfödslfjlf'''
 
     # Increment Variables / augmented assignment operators
@@ -153,50 +153,50 @@ l.sort() #uses ASCII Sort (meaning Capital Letters before small letters)
 l.sort(key=str.lower);l
 l.sort(key=str.lower,reverse=True);l
 
-cat = ['fat','orange','loud']
-cat.sort(key=len);cat
+l_cat = ['fat','orange','loud']
+l_cat.sort(key=len);l_cat
 
     #multiple assigment trick list
-cat = ['fat','orange','loud']
-size, color,dis = cat
+
+size, color,dis = l_cat
  # dictonary
 
     #defining
-myCat = {'size':'fat', 'color':'grey'}
+d_mycat = {'size':'fat', 'color':'grey'}
 
-myCat.setdefault('age',8) #adds new key age with the value 8
-myCat.setdefault('size','thin') #nothin happens as key size already exists
+d_mycat.setdefault('age',8) #adds new key age with the value 8
+d_mycat.setdefault('size','thin') #nothin happens as key size already exists
 
 #basic information
     
     #comparing
-myCat2 = { 'color':'grey', 'size':'fat'}
-myCat == myCat2
+d_mycat2 = { 'color':'grey', 'size':'fat'}
+d_mycat == d_mycat2
 
     #indexing
 
-myCat.get('size',0) # returns 0, if size does not exist
-myCat['size']
+d_mycat.get('size',0) # returns 0, if size does not exist
+d_mycat['size']
 
-myCat.get('NaN',0)
+d_mycat.get('NaN',0)
 
     #loop
-for key in myCat.keys():
+for key in d_mycat.keys():
     print(key)
-for value in myCat.values():
+for value in d_mycat.values():
     print(value)
-for item in myCat.items():
+for item in d_mycat.items():
     print(item)
     print('Key of item is : ' +  item[0])
     print('value of item is : ' +  item[1])
 
     #check for keys
-"color" in myCat2
+"color" in d_mycat2
 
     #count charracters with dictionaries
-message = 'Hello WorLd'
+s_msg = 'Hello WorLd'
 count = {}
-for c in message.lower():
+for c in s_msg.lower():
     c
     count.setdefault(c,0)
     count[c] = count[c] +1
