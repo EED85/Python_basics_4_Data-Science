@@ -1,7 +1,7 @@
 
 # links
 
-http://www.pythontutor.com/visualize.html#mode=edit
+[interactice python code](http://www.pythontutor.com/visualize.html#mode=edit)
 
 # installed modules
 

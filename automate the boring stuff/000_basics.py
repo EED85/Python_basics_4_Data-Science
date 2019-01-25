@@ -202,7 +202,7 @@ for c in s_msg.lower():
     count[c] = count[c] +1
     
 
-# plotting
+# @:plotting
 import matplotlib.pyplot as plt
 import numpy as np
 x = np.linspace(0,20,100)

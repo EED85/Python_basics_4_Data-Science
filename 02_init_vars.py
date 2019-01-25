@@ -1,5 +1,4 @@
 import numpy as np
-
 l = [] #list
 l_cat = ['fat','orange','loud']
 d = {} #dictonary
@@ -21,3 +20,4 @@ t = np.arange(0., 5, 0.2)
 y = np.sin(x) #numpy vector
 mat = np.eye(4) #Numpy Matrix
 m,n = mat.shape #dimensins of matrix
+print(name)
