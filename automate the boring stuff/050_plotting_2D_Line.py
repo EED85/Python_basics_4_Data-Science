@@ -71,13 +71,21 @@ plt.show()
 np.random.seed(19680801)
 mu, sigma = 1,2 
 x = np.random.normal(mu, sigma, 10000)
+y = np.random.normal(mu+.1, sigma, 20000)
     # the histogram of the data
 n, bins, patches = plt.hist(x, 50, normed=1, facecolor='g', alpha=0.75)
 plt.show()
 
 #rugplot
+n, bins, patches = plt.hist(x, 50, normed=1, facecolor='g', alpha=1)
+sns.rugplot(x, height=0.02, axis='x',alpha = 0.2)
+plt.show()
 
-sns.rugplot(x, height=0.05, axis='x', ax=ax)
+#overlapping histogramms
+n, bins, patches = plt.hist(x, 50, normed=1, facecolor='g', alpha=0.3)
+n, bins, patches = plt.hist(y, 50, normed=1, color='m', alpha=0.3)
+plt.show()
+
 
 #pmf: = Density / cdf:=distribution / ppf:=inverse distribution 
 from scipy.stats import poisson
