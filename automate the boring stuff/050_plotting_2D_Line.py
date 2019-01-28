@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import seaborn as sns
 
 x = np.linspace(-4,4,1000)
 t = np.arange(0., 5., 0.2)
@@ -73,6 +74,10 @@ x = np.random.normal(mu, sigma, 10000)
     # the histogram of the data
 n, bins, patches = plt.hist(x, 50, normed=1, facecolor='g', alpha=0.75)
 plt.show()
+
+#rugplot
+
+sns.rugplot(x, height=0.05, axis='x', ax=ax)
 
 #pmf: = Density / cdf:=distribution / ppf:=inverse distribution 
 from scipy.stats import poisson

@@ -2,7 +2,7 @@ import numpy as np #Mathematics
 import random
 import pandas as np #ETL
 import matplotlib as plt #Use Matlab Code for plotting
-import seaborn #nice plots
+import seaborn as sns #nice plots
 
 import copy #copies lists and dictonaries
 
