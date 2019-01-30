@@ -3,15 +3,15 @@ import numpy as np #Mathematics
 import random
 import math # mathematical functions defined by the C standard
 
-# ETL
+# ETL / DATA
 
 import pandas as np
 import openpyxl as xl #Reading and Editing Excel
 
 # Plotting
 
-import matplotlib as plt #Use Matlab Code for plotting
-import seaborn as sns #nice plots
+import matplotlib as plt #Matlab-like plotting
+import seaborn as sns #nice statistical plots
 
 # TIME
 
