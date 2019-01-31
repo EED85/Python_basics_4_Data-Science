@@ -16,7 +16,8 @@ b = a ; a = b
 a,b = b,a
 
     #line break within code only
-
+a = '1' + '2' + '3' + \
+    '4' + '5'
 s_long = 'Hello, ' + \
             'my name is '
 
@@ -78,10 +79,16 @@ a.replace('ll','LL')
 
 
     # print
-    
+msg= "Hello"
+msg1 = "!"
+n=23
+print('%s world%s' %(msg,msg1))
+
+print('{_1} - {_2} - {_1}'.format(_1=msg,_2=n))
+print('{} - {}'.format(msg,n))
 
     # ?regexpression
-
+import re
 
 
 # basic math
