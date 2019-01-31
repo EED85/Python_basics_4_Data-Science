@@ -3,10 +3,15 @@ import numpy as np #Mathematics
 import random
 import math # mathematical functions defined by the C standard
 
-# MACHINE Learning 
+# MACHINE LEARNING
 import scipy 
 
+# DEBUGGING / LOGGING
+
+import logging
+
 # ETL / DATA / STRINGS
+
 
 import pandas as np
 import re # regular expressions
