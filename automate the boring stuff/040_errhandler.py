@@ -80,7 +80,7 @@ print('a')
 # NOTSET 0
 import logging
 #set logging to txtfile
-logging.basicConfig(filename=logfile,level=logging.DEBUG,format='%(asctime)s - %(levelname)s %(message)s')
+logging.basicConfig(filename='log.log',level=logging.DEBUG,format='%(asctime)s - %(levelname)s %(message)s')
     #set logging to console
 console = logging.StreamHandler()
 console.setLevel(logging.DEBUG)
