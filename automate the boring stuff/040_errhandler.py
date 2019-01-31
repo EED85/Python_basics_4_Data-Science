@@ -71,6 +71,27 @@ print('a')
     #Option 2) write a log - use open and append method for files
     #option 3) use logging module in order to have nicer prints in the concole
     #Option 4) use logging module in order to write a log file
+        # Init
+# CRITICAL 50
+# ERROR 40
+# WARNING 30
+# INFO 20
+# DEBUG 10
+# NOTSET 0
+import logging
+#set logging to txtfile
+logging.basicConfig(filename=logfile,level=logging.DEBUG,format='%(asctime)s - %(levelname)s %(message)s')
+    #set logging to console
+console = logging.StreamHandler()
+console.setLevel(logging.DEBUG)
+formatter = logging.Formatter('%(asctime)s : %(levelname)s : %(message)s')
+console.setFormatter(formatter)
+logging.getLogger("").addHandler(console)
 
+logging.info('\n' + '-'*30 + '\n0) Initialisierung\n' + '-'*30 + '\n')
+
+logging.debug('hallo')
+
+logging.disable(logging.CRITICAL) #Disables all logging msg
 
 
