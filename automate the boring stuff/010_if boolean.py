@@ -20,3 +20,9 @@ if name == "Alice":
 #     print("B")
 else:
     print("else")
+
+#%% [markdown]
+
+# # shortcut for if-else
+# a will be assigend 1
+a = 0 if 1 == 21 else 1 
