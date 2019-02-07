@@ -2,9 +2,14 @@
 import numpy as np #Mathematics
 import random
 import math # mathematical functions defined by the C standard
-
+# e.g. math.exp()
 # MACHINE LEARNING
-import scipy 
+import scipy
+import sklearn #conda install scikit-learn
+
+# Statistics
+
+import statsmodels.api as sm
 
 # DEBUGGING / LOGGING
 
@@ -47,10 +52,18 @@ import bs4  # HTML PARSER / WEBSCRAPPING
 # MODULES
 #----------------------------------------------------------
 
+#ETL
+
+from pandas import Series,DataFrame
+
 # WEBSCRAPPING
 from bs4 import BeautifulSoup
 # TIME
 from datetime import datetime
+
+# Statistics
+
+
 
 # OPTIMIZATION
 
