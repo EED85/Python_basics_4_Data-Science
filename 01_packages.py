@@ -16,6 +16,8 @@ import logging
 import pandas as np
 import re # regular expressions
 import openpyxl as xl #Reading and Editing Excel
+import docx
+import pyPDF2
 
 # Plotting
 
@@ -31,7 +33,8 @@ import datetime
 import copy #copies lists and dictonaries
 import os #operating system -> get folder information , set wd etc.
 import sys  #retreiving system information
-import paperclip #get and set clipboard
+import pyperclip #get and set clipboard
+import pyautogui
 import pkg_resources #listung all python packages and its versions
 
 # WEB

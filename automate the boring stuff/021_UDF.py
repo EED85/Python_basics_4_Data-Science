@@ -46,3 +46,8 @@ def _devide_err(arg1,arg2):
 
 
 N=_devide_err(42,'h')
+
+def test():
+    print('a')
+
+    print('a2')
