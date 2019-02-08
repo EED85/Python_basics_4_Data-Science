@@ -186,7 +186,12 @@ print (m1 ^ m2)
 
 #%% [markdown]
 
+frozen = frozenset(m2)
+print(m2)
+d = {frozen : 'test'}
+print(d.keys)
 
+#%% [markdown]
 
 
 # conversion
