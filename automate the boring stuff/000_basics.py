@@ -161,6 +161,32 @@ print(f"{today:%B %d, %Y}")
 3**2 #power exponent
 4%3 #-> 1 (division remainder / Rest)
 
+#%% [markdown]
+# # Sets
+
+# ## Define
+m1 = {9, 4, 3, 3, "Hello"}
+print(m1)
+print(type(m1))
+
+m2 = {3, 4, 5}
+#%% [markdown]
+# ## Intercept
+
+print (m1 & m2)
+
+
+#%% [markdown]
+# ## UNION
+print (m1 | m2)
+#%% [markdown]
+# ## without
+print (m1 - m2)
+print (m1 ^ m2)
+
+#%% [markdown]
+
+
 
 
 # conversion
