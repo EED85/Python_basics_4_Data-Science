@@ -46,6 +46,8 @@ import pkg_resources #listung all python packages and its versions
 
 import socket # get ip address
 import bs4  # HTML PARSER / WEBSCRAPPING
+import webbrowser as wb
+import selenium #control firefox - fill out forms, enter passwords ...
 
 
 #--------------------------------------------------------
@@ -56,8 +58,9 @@ import bs4  # HTML PARSER / WEBSCRAPPING
 
 from pandas import Series,DataFrame
 
-# WEBSCRAPPING
+# WEB
 from bs4 import BeautifulSoup
+from selenium import webdriver
 # TIME
 from datetime import datetime
 
