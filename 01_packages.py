@@ -41,7 +41,7 @@ import sys  #retreiving system information
 import pyperclip #get and set clipboard
 import pyautogui
 import pkg_resources #listung all python packages and its versions
-
+import locale
 # WEB
 
 import socket # get ip address
