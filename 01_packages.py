@@ -62,7 +62,7 @@ from pandas import Series,DataFrame
 from bs4 import BeautifulSoup
 from selenium import webdriver
 # TIME
-from datetime import datetime
+from datetime import datetime, date, time, timedelta
 
 # Statistics
 
