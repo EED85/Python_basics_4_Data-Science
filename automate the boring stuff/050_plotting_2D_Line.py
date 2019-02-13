@@ -1,14 +1,45 @@
+
+#%% [markdown]
+# # import libs
+
 import matplotlib.pyplot as plt
 import numpy as np
-import seaborn as sns
 
+#%% [markdown]
+
+# ## tip: always import seaborn and set style, plt plots look nicer then
+
+import seaborn as sns
+sns.set_style("whitegrid")
+
+#%% [markdown]
+# ## defining variables
 x = np.linspace(-4,4,1000)
 t = np.arange(0., 5., 0.2)
 
-#plotting of build in functions
+#%% [markdown]
+# ## plotting of build in functions
 
 plt.plot(x,np.sin(x))
 plt.show()
+
+#%% [markdown]
+
+# ## subplot
+
+fig, [ax1,ax2] = plt.subplots(2,1)
+ax1.plot(x, np.sin(x))
+ax2.plot(x, 2*np.sin(x-1))
+plt.show()
+
+# plt.subplot(2,1,1)
+# ax1.plot(t,np.sin(t))
+# plt.subplot(2,1,2)
+# ax2.plot(t,np.cos(t))
+# plt.show()
+
+
+#%%
 
 # important options
     #Labels
@@ -47,12 +78,6 @@ plt.legend(loc='upper left')
 plt.title('COS vs SIN')
 plt.show()
 
-#subplot
-plt.subplot(211)
-plt.plot(t,np.sin(t))
-plt.subplot(212)
-plt.plot(t,np.cos(t))
-plt.show()
 
 
 # easy plotting of UDF
