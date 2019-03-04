@@ -1,11 +1,17 @@
+#%% [markdown]
+# # Used packages
+import time
+import datetime
+import re
 
 
-# General characteristis of python
+#%% [markdown]
+# # General characteristis of python
 
-    # code intend is forced on loops / if statements ...
+# ## code intend is forced on loops / if statements ...
 
 
-    #multiple assigment trick
+ # ## multiple assigment trick
 
 a = 'A'
 b = 'B'
@@ -15,15 +21,22 @@ a,b = 'A','B'
 b = a ; a = b
 a,b = b,a
 
-    #line break within code only
+#%% [markdown]
+ # ## line break within code only
 a = '1' + '2' + '3' + \
     '4' + '5'
+print(a)
 s_long = 'Hello, ' + \
             'my name is '
-
-    #defining long strings with line break within string and code
+print(s_long)
+#%% [markdown]
+# ## defining long strings with line break within string and code
 s_long2 = '''uhsdfuhsdf
 dfödslfjlf'''
+print(s_long2)
+
+#%% [markdown]
+
 
     # Increment Variables / augmented assignment operators
     # https://docs.python.org/2.0/ref/augassign.html
@@ -34,51 +47,66 @@ I *= 2 #I = I *2 -> I = 20
 I /= 2 #I = I/2 -> I = 10
 I %= 3 #I = I % 3 -> I = 1
 
-
+#%% [markdown]
 
     # object oriented
     # every class has methods, less functions than in other o
     # languages
 
-    # mutable and immutable
-    # lista are mutable, strings are not
+# ## mutable and immutable
+    # lists are mutable, strings are not
 l = list('hello')
 str1 = 'hel1lo'
 l[1] = "H"
 str1[1] = "H" # throws error
 
-    #Note - mutable variables use references ...
+#%% [markdown]
+#    ##Note - mutable variables use references ...
 l1 = list(range(5))
+print(l1)
 l2 = l1
 l2[0] = -1 #l1 & l2 will be changed!!
-l1
+print(l1)
 
-
-# strings in Python
+#%% [markdown]
+# # strings in Python
+# ## Use either ' or "
 a = 'hello'
 b = "test"
-c = a+b # concetant
-d = a*3 # repeat
 
+#%% [markdown]
+# ## CONCATENATE
+c = a+b
+print(c)
+#%% [markdown]
+# ## repeat
+d = a*3
+print(d)
+
+#%% [markdown]
+# ## Indexing
 a[1] #returns second letter of hello
 
-# ? line intend / Zeilenumbruch / einrücken
-# substring
+#%% [markdown]
+# ### substring
 a[1:3]
-# match
+#%% [markdown]
+# ## important methods
+# ### match
 a.find('e')
 'll' in a
-# replace
+#%% [markdown]
+# ### replace
 a.replace('ll','LL')
 
-
+#%% [markdown]
 
 # split,join,reverse, is*
 
 # https://www.digitalocean.com/community/tutorials/an-introduction-to-string-functions-in-python-3
 
-
-    # print
+#%% [markdown]
+#    ## print
 msg= "Hello"
 msg1 = "!"
 n=23
@@ -87,10 +115,43 @@ print('%s world%s' %(msg,msg1))
 print('{_1} - {_2} - {_1}'.format(_1=msg,_2=n))
 print('{} - {}'.format(msg,n))
 
+#%% [markdown]
+
+# ## format strings
+# [link](https://pyformat.info/)
+# ```python
+# d:= integer
+# f:= float
+# s:= string
+# ```
+# https://docs.python.org/3/reference/lexical_analysis.html#formatted-string-literals
+ # ### format numbers
+
+print('{:d}'.format(42))
+print('{:.2f}'.format(452.345))
+print('{:.2f} €'.format(100.34))
+print('{:04d}'.format(1))
+
+#%% [markdown]
+# ### align center -> does not work in vsc?
+print('{:^20}'.format('test'))
+
+
+#%% [markdown]
+# ### Datetime
+# http://strftime.org/
+
+today = datetime.date.today()
+print(today)
+print('{:%Y}'.format(today))
+print(f"{today:%B %d, %Y}")
+
+
+#%% [markdown]
     # ?regexpression
-import re
+#import re
 
-
+#%% [markdown]
 # basic math
 
 2+2
@@ -100,6 +161,37 @@ import re
 3**2 #power exponent
 4%3 #-> 1 (division remainder / Rest)
 
+#%% [markdown]
+# # Sets
+
+# ## Define
+m1 = {9, 4, 3, 3, "Hello"}
+print(m1)
+print(type(m1))
+
+m2 = {3, 4, 5}
+#%% [markdown]
+# ## Intercept
+
+print (m1 & m2)
+
+
+#%% [markdown]
+# ## UNION
+print (m1 | m2)
+#%% [markdown]
+# ## without
+print (m1 - m2)
+print (m1 ^ m2)
+
+#%% [markdown]
+
+frozen = frozenset(m2)
+print(m2)
+d = {frozen : 'test'}
+print(d.keys)
+
+#%% [markdown]
 
 
 # conversion
@@ -220,3 +312,5 @@ plt.plot([1,2,3,4,5])
 plt.show() 
 
 #? Mising value / NaN ..
+
+#%%

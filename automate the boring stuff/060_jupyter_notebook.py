@@ -9,3 +9,5 @@ plt.plot(x, np.sin(x))
 #plt.show() 
 
 #%%
+from IPython.display import YouTubeVideo
+YouTubeVideo("p51c5g1iNzw")
