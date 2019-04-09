@@ -3,7 +3,8 @@
 import time
 import datetime
 import re
-
+from datetime import datetime, date, time, timedelta
+from dateutil.relativedelta import *
 
 #%% [markdown]
 # # General characteristis of python
@@ -35,6 +36,13 @@ s_long2 = '''uhsdfuhsdf
 dfödslfjlf'''
 print(s_long2)
 
+
+#%% [markdown]
+# ## Line break in code with methods
+str('adda')\
+    .replace('d','b')\
+    .upper()
+
 #%% [markdown]
 
 
@@ -46,6 +54,11 @@ I -= 1 #I = I - 1 -> I = 10
 I *= 2 #I = I *2 -> I = 20
 I /= 2 #I = I/2 -> I = 10
 I %= 3 #I = I % 3 -> I = 1
+
+#%% [markdown]
+# # Date / Time / Datetime
+
+
 
 #%% [markdown]
 
@@ -88,8 +101,14 @@ print(d)
 a[1] #returns second letter of hello
 
 #%% [markdown]
-# ### substring
-a[1:3]
+# ### substring n/ left / right
+substring = a[1:3]
+print(substring)
+str_left = a[:3]
+print(str_left)
+str_right = a[-3:]
+print(str_right)
+
 #%% [markdown]
 # ## important methods
 # ### match
@@ -141,11 +160,22 @@ print('{:^20}'.format('test'))
 # ### Datetime
 # http://strftime.org/
 
-today = datetime.date.today()
+today = date.today()
+# now = time.now()
 print(today)
 print('{:%Y}'.format(today))
 print(f"{today:%B %d, %Y}")
+print(timedelta(hours=4,minutes=2))
+# strftime() / strptime()
 
+#Age Calculation
+
+
+
+today = date.today()
+dob = date(1982, 7, 5)
+age = relativedelta(today, dob)
+print(age.year)
 
 #%% [markdown]
     # ?regexpression
@@ -197,12 +227,13 @@ print(d.keys)
 # conversion
 
 int(2.3)
+float(2.3)
 int('2')
 round(2.234,1) #one decimal
 
 print(str(2.3))
 
-
+#%% [markdown]
 #List
     #define
 l = ['a','b','c']
