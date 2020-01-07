@@ -133,6 +133,7 @@ print('%s world%s' %(msg,msg1))
 
 print('{_1} - {_2} - {_1}'.format(_1=msg,_2=n))
 print('{} - {}'.format(msg,n))
+print(f''' {msg} - {n}''')
 
 #%% [markdown]
 
